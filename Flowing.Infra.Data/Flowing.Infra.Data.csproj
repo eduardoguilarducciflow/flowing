@@ -47,6 +47,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="0 - Context\FlowingContext.cs" />
+    <Compile Include="1 - Repositories\RepositoryBase.cs" />
+    <Compile Include="1 - Repositories\UserRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

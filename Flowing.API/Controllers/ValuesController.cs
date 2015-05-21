@@ -1,19 +1,25 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
+﻿using Flowing.Application.Interfaces;
 using System.Web.Http;
 
 namespace Flowing.API.Controllers
 {
     public class ValuesController : ApiController
     {
-        // GET api/values
-        public IEnumerable<string> Get()
+
+       
+       private readonly IUserApplicationService _clienteApp;
+
+       public ValuesController(IUserApplicationService clienteApp)
         {
-            return new string[] { "value1", "value2" };
+            _clienteApp = clienteApp;
         }
+
+        public string Get()
+        {
+            _clienteApp.GetSomeUsers();
+            return "value";
+        }
+        
 
         // GET api/values/5
         public string Get(int id)

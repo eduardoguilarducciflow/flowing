@@ -6,7 +6,7 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{8365FC4B-37D1-4316-8948-87241687E622}</ProjectGuid>
+    <ProjectGuid>{E59F60D6-0022-4F62-A87E-E9EF6860DB41}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Flowing.API.Tests</RootNamespace>
@@ -103,7 +103,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Flowing.API\Flowing.API.csproj">
-      <Project>{EBC22E5B-3E5D-4AF4-ADC5-AFBE20ACF240}</Project>
+      <Project>{93C58215-9337-4356-9B85-6A58AE4C6A1B}</Project>
       <Name>Flowing.API</Name>
     </ProjectReference>
   </ItemGroup>

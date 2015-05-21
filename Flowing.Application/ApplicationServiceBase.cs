@@ -1,18 +1,17 @@
-﻿using Flowing.Application.Interfaces;
-using Flowing.Domain.Interfaces.Services;
+﻿
+
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Flowing.Application.Interfaces;
+using Flowing.Domain.Interfaces.Services;
 
 namespace Flowing.Application
 {
     public class ApplicationServiceBase<TEntity> : IDisposable, IApplicationServiceBase<TEntity> where TEntity : class
     {
-        private readonly IApplicationServiceBase<TEntity> _serviceBase;
+        private readonly IServiceBase<TEntity> _serviceBase;
 
-        public ApplicationServiceBase(IApplicationServiceBase<TEntity> serviceBase)
+        public ApplicationServiceBase(IServiceBase<TEntity> serviceBase)
         {
             _serviceBase = serviceBase;
         }

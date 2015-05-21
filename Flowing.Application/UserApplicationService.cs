@@ -1,17 +1,16 @@
 ﻿using Flowing.Application.Interfaces;
-using Flowing.Domain.Interfaces.Services;
 using Flowing.Domain.Entities;
+using Flowing.Domain.Interfaces.Services;
 using System.Collections.Generic;
-
 
 
 namespace Flowing.Application
 {
     public class UserApplicationService : ApplicationServiceBase<User>, IUserApplicationService
     {
-        private readonly IUserApplicationService _userService;
+        private readonly IUserService _userService;
 
-        public UserApplicationService(IUserApplicationService userService)
+        public UserApplicationService(IUserService userService)
             : base(userService)
         {
             _userService = userService;

@@ -1,15 +1,16 @@
-﻿using Flowing.Domain.Entities;
-using Flowing.Domain.Interfaces.Services;
-using System;
+﻿
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Flowing.Domain.Entities;
 
-namespace Flowing.Domain.Services
+namespace Flowing.Domain.Interfaces.Services
 {
     public interface IUserService : IServiceBase<User>
     {
-        IEnumerable<User> GetSomeUsers(IEnumerable<User> users);
+        IEnumerable<User> GetSomeUsers();
+    }
+
+    public interface ITaxService
+    {
+        double GetTaxRate();
     }
 }
