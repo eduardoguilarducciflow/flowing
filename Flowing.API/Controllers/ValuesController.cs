@@ -4,9 +4,7 @@ using System.Web.Http;
 namespace Flowing.API.Controllers
 {
     public class ValuesController : ApiController
-    {
-
-       
+    {  
        private readonly IUserApplicationService _clienteApp;
 
        public ValuesController(IUserApplicationService clienteApp)
