@@ -12,7 +12,7 @@ namespace Flowing.Infra.Data.Context
     public class FlowingContext : DbContext
     {
 
-
+        //Default user table
         public DbSet<User> User { get; set; }
 
 
